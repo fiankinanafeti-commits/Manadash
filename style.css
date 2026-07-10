@@ -1,0 +1,33 @@
+Centre le jeu verticalement et horizontalement sur l'écran */
+body {
+    background-color: #020617; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Le conteneur qui empêche le terrain d'être minuscule */
+#gameWrapper {
+    width: 90vw;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Le Canvas s'adapte maintenant à 100% de la taille de son conteneur */
+canvas {
+    background: #0a0302; 
+    border: 3px solid #ff9e00; 
+    box-shadow: 0 0 35px rgba(255, 158, 0, 0.3);
+    width: 100%;
+    height: auto;
+    display: block;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+}
